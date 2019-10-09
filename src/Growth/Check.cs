@@ -1,5 +1,6 @@
 ﻿using Growth.Extensions;
 using System;
+using System.Collections.Generic;
 
 namespace Growth
 {
@@ -17,7 +18,23 @@ namespace Growth
         {
             if (value.IsNullOrEmpty())
             {
-                throw new ArgumentException($"{parameterName} can not be null or empty!", parameterName);
+                throw new ArgumentException($"{parameterName} can not be null or empty", parameterName);
+            }
+        }
+
+        public static void NotNullOrWhiteSpace(string value, string parameterName)
+        {
+            if (value.IsNullOrWhiteSpace())
+            {
+                throw new ArgumentException($"{parameterName} can not be null , empty or white space", parameterName);
+            }
+        }
+
+        public static void NotNullOrEmpty<T>(ICollection<T> value, string parameterName)
+        {
+            if (value == null || value.Count <= 0)
+            {
+                throw new ArgumentException(parameterName + " can not be null or empty", parameterName);
             }
         }
 

@@ -26,7 +26,7 @@ namespace Growth.Extensions
             if (dateTime == null)
                 return string.Empty;
 
-            return dateTime.ToDateString();
+            return ToDateString(dateTime.Value);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Growth.Extensions
             if (dateTime == null)
                 return string.Empty;
 
-            return dateTime.ToDateTimeString();
+            return ToDateTimeString(dateTime.Value);
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Growth.Extensions
             if (dateTime == null)
                 return string.Empty;
 
-            return dateTime.ToTimeString();
+            return ToTimeString(dateTime.Value);
         }
     }
 }
