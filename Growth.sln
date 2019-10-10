@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29025.244
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A5B594D-9908-4583-B824-4B812F63A4D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Growth", "src\Growth\Growth.csproj", "{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Growth", "src\Growth\Growth.csproj", "{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Growth.Caching", "Growth.Caching\Growth.Caching.csproj", "{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5E9797C9-E1B6-4F4F-8F79-FBBD8AC01731} = {6A5B594D-9908-4583-B824-4B812F63A4D0}
+		{BD6ACCFD-13B1-44E4-B4AC-278D60C268D9} = {6A5B594D-9908-4583-B824-4B812F63A4D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA40E849-B326-4599-9E88-D739183E030F}

@@ -6,13 +6,13 @@ namespace Growth.Caching
 {
     public interface ICache
     {
-        bool IsExist(string key);
+        bool Exists(string cacheKey);
 
-        T Get<T>(string key);
+        T Get<T>(string cacheKey);
 
-        bool Set<T>(string key, T value, TimeSpan? expiration = null);
+        void Set<T>(string cacheKey, T value, TimeSpan? expiration = null);
 
-        void Remove(string key);
+        void Remove(string cacheKey);
 
         void Clear();
     }
