@@ -6,6 +6,11 @@ namespace Growth.Exceptions
 {
     public class KnownException : Exception
     {
+        public KnownException(string message) : base(message)
+        {
+
+        }
+
         public KnownException(int code, string message) : base(message)
         {
             Code = code;

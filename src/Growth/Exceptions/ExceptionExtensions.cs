@@ -9,8 +9,8 @@ namespace Growth.Exceptions
         /// <summary>
         /// 格式化异常消息
         /// </summary>
-        /// <param name="ex"></param>
-        /// <param name="isHideStackTrace"></param>
+        /// <param name="ex">异常对象</param>
+        /// <param name="isHideStackTrace">是否隐藏堆栈追踪信息</param>
         /// <returns></returns>
         public static string Format(this Exception ex, bool isHideStackTrace = false)
         {
