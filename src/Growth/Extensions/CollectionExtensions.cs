@@ -38,5 +38,17 @@ namespace Growth.Extensions
                 source.Remove(item);
             }
         }
+
+        /// <summary>
+        /// 比较集合是否相等，集合内容顺序可以不一致
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static bool Equal<T>(this ICollection<T> source, ICollection<T> target)
+        {
+            return source.Count == target.Count && source.All(target.Contains);
+        }
     }
 }
